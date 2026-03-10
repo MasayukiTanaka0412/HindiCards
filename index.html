@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hindi Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>ヒンディー語 練習カード</h1>
+
+      <section id="setup" class="panel">
+        <h2>出題設定</h2>
+        <label for="questionCount">出題数（デフォルト 20）</label>
+        <input id="questionCount" type="number" min="1" value="20" />
+        <p class="hint">日常会話から半分、オフィス会話から残りをランダム出題します。</p>
+        <button id="startBtn">開始</button>
+      </section>
+
+      <section id="quiz" class="panel hidden" aria-live="polite">
+        <div class="progress" id="progress"></div>
+        <article class="card">
+          <div class="line devanagari-wrap">
+            <p id="devanagari" class="devanagari"></p>
+            <button id="speakBtn" class="secondary" title="ヒンディー語で読み上げ">🔊 読み上げ</button>
+          </div>
+          <p id="roman" class="roman"></p>
+          <p id="japanese" class="japanese hidden"></p>
+        </article>
+        <div class="actions">
+          <button id="showAnswerBtn">答えを見る</button>
+          <button id="nextBtn" class="hidden">次へ</button>
+        </div>
+      </section>
+
+      <section id="result" class="panel hidden">
+        <h2>完了！</h2>
+        <p id="resultText"></p>
+      </section>
+
+      <footer>
+        <button id="openExamplesBtn" class="secondary">例文集を見る</button>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
