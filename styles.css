@@ -1,0 +1,104 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+label,
+.hint,
+.progress,
+#resultText {
+  font-size: 0.95rem;
+}
+
+input[type="number"] {
+  display: block;
+  margin: 8px 0 8px;
+  width: 120px;
+  padding: 8px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button.secondary {
+  background: #475569;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.card {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.devanagari-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.line {
+  margin: 8px 0;
+}
+
+.devanagari {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.roman {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.japanese {
+  font-size: 1.1rem;
+  color: #166534;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
